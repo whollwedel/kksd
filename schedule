@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Schedule & Pricing • Kali Kempo Self Defense</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+<header>
+  <div class="container nav">
+    <div class="brand">
+      <div class="logo"><img src="images/Kalikempo Martial Arts logo with circle.jpg" alt="Logo" /></div>
+      <span>Kali Kempo Self Defense</span>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="location.html">Location</a></li>
+        <li><a href="faq.html">FAQ</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section id="schedule">
+    <div class="container">
+      <h2 class="section-title">Schedule & Pricing</h2>
+      <div class="grid grid-3">
+        <div class="card">
+          <h3>Drop-In</h3><div class="price">$15</div><p class="small">Per class</p>
+        </div>
+        <div class="card">
+          <h3>Monthly</h3><div class="price">$80</div><p class="small">Unlimited classes</p>
+        </div>
+        <div class="card">
+          <h3>When</h3>
+          <p><strong>Monday & Friday</strong> evenings</p>
+          <ul>
+            <li>Kids (8–13): <strong>6:30–7:30 PM</strong></li>
+            <li>Teens & Adults (14+): <strong>7:30–8:30 PM</strong></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="card" style="margin-top:18px;">
+        <h3>Class Calendar (Weekly)</h3>
+        <table>
+          <thead><tr><th>Day</th><th>Kids (8–13)</th><th>Teens & Adults (14+)</th></tr></thead>
+          <tbody>
+            <tr><td>Monday</td><td>6:30–7:30 PM</td><td>7:30–8:30 PM</td></tr>
+            <tr><td>Friday</td><td>6:30–7:30 PM</td><td>7:30–8:30 PM</td></tr>
+          </tbody>
+        </table>
+        <p class="small">* No contracts. Community-center holiday closures may affect dates.</p>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="container grid grid-2">
+    <div><strong>Kali Kempo Self Defense</strong></div>
+    <div style="text-align:right;"><p class="small">Optimist Park • Raleigh, NC</p></div>
+  </div>
+</footer>
+</body>
+</html>
