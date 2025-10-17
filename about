@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>About • Kali Kempo Self Defense</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+<header>
+  <div class="container nav">
+    <div class="brand">
+      <div class="logo">
+        <img src="images/Kalikempo Martial Arts logo with circle.jpg" alt="Logo" />
+      </div>
+      <span>Kali Kempo Self Defense</span>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="schedule.html">Schedule & Pricing</a></li>
+        <li><a href="location.html">Location</a></li>
+        <li><a href="faq.html">FAQ</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section id="about">
+    <div class="container grid grid-2">
+      <div class="card">
+        <h2 class="section-title">What is Kali Kempo?</h2>
+        <p class="lead">It’s a modern training approach combining Shaolin Kung Fu, Shaolin Kempo, and Pekiti Tirsia Kali — blending Chinese and Filipino martial arts to create practical, well-rounded self-defense.</p>
+        <ul>
+          <li>Beginner-friendly, technique-driven classes</li>
+          <li>Focus on awareness, de-escalation, and fitness</li>
+          <li>Safe training with pads and controlled drills</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h2 class="section-title">Who are classes for?</h2>
+        <p>We currently offer two age groups on <strong>Monday & Friday evenings</strong>:</p>
+        <ul>
+          <li><strong>Kids (8–13):</strong> 6:30–7:30 PM</li>
+          <li><strong>Teens & Adults (14+):</strong> 7:30–8:30 PM</li>
+        </ul>
+        <p class="small">No experience needed. Wear workout clothes and bring water.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="instructor">
+    <div class="container">
+      <div class="card">
+        <h2 class="section-title">About the Instructor</h2>
+        <p><strong>Instructor William Hollwedel — Founder, Kali Kempo (Raleigh, NC)</strong></p>
+        <p>I began training in martial arts at age three and have spent nearly three decades studying and teaching systems worldwide. My background includes 18 years in Shaolin Kempo, 8 years in Pekiti Tirsia Kali, and focused experience in kickboxing, sambo, and fencing.</p>
+        <p>Through these disciplines, I developed <strong>Kali Kempo</strong> — a modern approach blending traditional structure and flow with practical, real-world defense. My goal is to help students build skill, confidence, and adaptability through disciplined, hands-on training.</p>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="container grid grid-2">
+    <div>
+      <strong>Kali Kempo Self Defense</strong>
+      <p class="small">A blend of Shaolin Kempo • Shaolin Kung Fu • Pekiti Tirsia Kali</p>
+    </div>
+    <div style="text-align:right;">
+      <p class="small">Classes at Optimist Park Community Center • Mon & Fri evenings</p>
+    </div>
+  </div>
+</footer>
+</body>
+</html>
