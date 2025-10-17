@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Location | Kali Kempo Martial Arts</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <img src="images/Kalikempo Martial Arts logo with circle.jpg" alt="Kali Kempo Martial Arts Logo">
+      <h1>Kali Kempo Martial Arts</h1>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="about.html">About</a></li>
+        <li><a href="schedule.html">Schedule & Pricing</a></li>
+        <li><a href="location.html" class="active">Location</a></li>
+        <li><a href="faq.html">FAQ</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="location">
+    <h2>Location</h2>
+    <p>Classes are held inside <strong>[Insert your facility name]</strong> at [insert address here]. Ample parking is available on-site.</p>
+  </section>
+
+  <section id="expect">
+    <h2>What to Expect</h2>
+    <p>All classes emphasize safety, respect, and practical progression. Beginners are always welcome — no prior experience required.</p>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Kali Kempo Martial Arts | All Rights Reserved</p>
+  </footer>
+</body>
+</html>
