@@ -1,341 +1,36 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Kali Kempo Self Defense • Raleigh, NC</title>
-  <meta name="description" content="Kali Kempo Self Defense in Raleigh, NC — a practical, beginner‑friendly mix of Shaolin Kempo, Shaolin Kung Fu, and Pekiti Tirsia Kali. Classes Mon & Fri. Kids (8–13) 6:30–7:30 PM. Teens & Adults (14+) 7:30–8:30 PM. $15 per class or $80/month at the Optimist Park Community Center." />
-  <meta property="og:title" content="Kali Kempo Self Defense • Raleigh, NC" />
-  <meta property="og:description" content="Practical self‑defense & fitness — a mix of Shaolin Kempo, Shaolin Kung Fu, and Pekiti Tirsia Kali. Kids & adults. Mon & Fri evenings at Optimist Park Community Center." />
-  <meta property="og:type" content="website" />
-  <meta property="og:locale" content="en_US" />
-  <meta name="theme-color" content="#0f172a" />
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
-  <style>
-    :root {
-      --bg: #0a1c2f;       /* dark brown */
-      --panel: #3c2a18;    /* card surface */
-      --muted: #a9cbb7;    /* secondary text */
-      --text: #fdf7ec;        /* primary text cream */
-	  --accent: #22d3ee;   /* terracotta */
-	  --accent-2: #22d3ee; /* Sage green */
-      --ring: rgba(34, 211, 238, 0.6);
-    }
-    * { box-sizing: border-box; }
-    html, body { margin: 0; padding: 0; background: var(--bg); color: var(--text); font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, Arial, "Noto Sans", "Apple Color Emoji", "Segoe UI Emoji"; }
-    a { color: var(--accent); text-decoration: none; }
-    a:hover { text-decoration: underline; }
-
-    .container { width: min(1100px, 92vw); margin: 0 auto; }
-
-    /* Nav */
-    header { position: sticky; top: 0; backdrop-filter: blur(8px); background: linear-gradient(180deg, rgba(11,16,32,0.9), rgba(11,16,32,0.6)); border-bottom: 1px solid rgba(255,255,255,0.06); z-index: 50; }
-    .nav { display: flex; align-items: center; justify-content: space-between; padding: 14px 0; }
-    .brand { display: flex; align-items: center; gap: 10px; font-weight: 800; letter-spacing: 0.2px; }
-    .brand .logo {
-  width: 36px;
-  height: 36px;
-  display: grid;
-  place-items: center;
-  overflow: hidden;
-  border-radius: 8px;
-}
-.brand .logo img {
-  width: 100%;
-  height: auto;
-  display: block;
-}    nav ul { display: flex; gap: 18px; list-style: none; padding: 0; margin: 0; }
-    nav a { padding: 8px 12px; border-radius: 10px; font-weight: 600; color: var(--text); }
-    nav a:hover { background: rgba(255,255,255,0.06); text-decoration: none; }
-
-    /* Hero */
-    .hero { padding: 64px 0 40px; position: relative; overflow: hidden; }
-    .hero h1 { font-size: clamp(28px, 4vw, 48px); line-height: 1.1; margin: 12px 0; }
-    .hero p { color: var(--muted); font-size: clamp(16px, 2.4vw, 18px); }
-    .hero .cta { margin-top: 22px; display: flex; gap: 12px; flex-wrap: wrap; }
-    .btn { display: inline-flex; align-items: center; gap: 8px; padding: 12px 16px; border-radius: 12px; font-weight: 700; border: 1px solid rgba(255,255,255,0.12); background: linear-gradient(180deg, rgba(255,255,255,0.06), rgba(255,255,255,0.02)); color: var(--text); box-shadow: 0 6px 20px rgba(2, 6, 23, 0.6); }
-    .btn:hover { transform: translateY(-1px); box-shadow: 0 10px 28px rgba(2, 6, 23, 0.7); text-decoration: none; }
-    .btn.primary { background: linear-gradient(180deg, rgba(34, 211, 238, 0.18), rgba(34, 211, 238, 0.10)); border-color: rgba(34,211,238,0.35); }
-
-    /* Sections */
-    section { padding: 56px 0; }
-    .section-title { font-size: clamp(22px, 3vw, 32px); margin: 0 0 18px; }
-    .lead { color: var(--muted); max-width: 70ch; }
-
-    .grid { display: grid; gap: 18px; }
-    .grid-2 { grid-template-columns: repeat(2, minmax(0, 1fr)); }
-    .grid-3 { grid-template-columns: repeat(3, minmax(0, 1fr)); }
-    @media (max-width: 900px) { .grid-3 { grid-template-columns: 1fr; } }
-    @media (max-width: 780px) { .grid-2 { grid-template-columns: 1fr; } }
-
-    .card { background: var(--panel); border: 1px solid rgba(255,255,255,0.08); border-radius: 16px; padding: 18px; box-shadow: 0 12px 30px rgba(0,0,0,0.25), inset 0 0 0 1px rgba(255,255,255,0.02); }
-    .card h3 { margin: 0 0 8px; font-size: 20px; }
-    .badge { display: inline-block; padding: 4px 10px; font-size: 12px; border: 1px solid rgba(255,255,255,0.14); border-radius: 999px; color: var(--muted); }
-
-    .price { font-size: 28px; font-weight: 800; margin: 8px 0; }
-    .small { color: var(--muted); font-size: 14px; }
-
-    /* Table */
-    table { width: 100%; border-collapse: collapse; overflow: hidden; border-radius: 14px; }
-    th, td { padding: 12px 14px; border-bottom: 1px solid rgba(255,255,255,0.06); text-align: left; }
-    thead th { background: rgba(255,255,255,0.04); font-size: 14px; color: var(--muted); letter-spacing: 0.3px; }
-    tbody tr:hover { background: rgba(255,255,255,0.03); }
-
-    /* Map */
-    .map { border: 0; width: 100%; height: 360px; border-radius: 14px; box-shadow: 0 10px 30px rgba(0,0,0,0.3); }
-
-    /* Footer */
-    footer { padding: 40px 0 60px; color: var(--muted); border-top: 1px solid rgba(255,255,255,0.08); }
-
-    /* Accessibility helpers */
-    .sr-only { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0; }
-  </style>
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "SportsActivityLocation",
-    "name": "Kali Kempo Self Defense",
-    "description": "A practical, beginner‑friendly mix of Shaolin Kempo, Shaolin Kung Fu, and Pekiti Tirsia Kali in Raleigh, NC.",
-    "priceRange": "$$",
-    "address": {
-      "@type": "PostalAddress",
-      "name": "Optimist Park Community Center",
-      "addressLocality": "Raleigh",
-      "addressRegion": "NC",
-      "addressCountry": "US"
-    },
-    "openingHoursSpecification": [
-      { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday", "Friday"], "opens": "18:30", "closes": "20:30" }
-    ],
-    "sameAs": []
-  }
-  </script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kali Kempo Martial Arts</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<header>
-  <div class="container nav" role="navigation" aria-label="Primary">
-    <div class="brand">
-      <div class="logo">
-        <!-- Replace the path below with your actual logo file -->
-        <img src="Kalikempo Martial Arts logo with circle.jpg" alt="Kali Kempo Self Defense Logo" />
-      </div>
-      <span>Kali Kempo Self Defense</span>
+  <header>
+    <div class="logo">
+      <img src="images/Kalikempo Martial Arts logo with circle.jpg" alt="Kali Kempo Martial Arts Logo">
+      <h1>Kali Kempo Martial Arts</h1>
     </div>
     <nav>
       <ul>
-        <li><a href="#about">About</a></li>
-        <li><a href="#schedule">Schedule & Pricing</a></li>
-        <li><a href="#location">Location</a></li>
-        <li><a href="#faq">FAQ</a></li>
-        <li><a href="#contact">Contact</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="schedule.html">Schedule & Pricing</a></li>
+        <li><a href="location.html">Location</a></li>
+        <li><a href="faq.html">FAQ</a></li>
+        <li><a href="contact.html">Contact</a></li>
       </ul>
     </nav>
-  </div>
-</header>
+  </header>
 
-  <main>
-    <!-- Hero -->
-    <section class="hero">
-      <div class="container">
-        <span class="badge">Raleigh, NC • Community Classes</span>
-        <h1>Practical Self‑Defense for All Ages</h1>
-        <p class="lead">A friendly, skills‑first blend of <strong>Shaolin Kempo</strong>, <strong>Shaolin Kung Fu</strong>, and <strong>Pekiti Tirsia Kali</strong>. Learn striking, footwork, and situational awareness in a welcoming community.
-        </p>
-        <div class="cta">
-          <a class="btn primary" href="#schedule" aria-label="Jump to schedule and pricing">See Schedule & Pricing</a>
-        </div>
-      </div>
-    </section>
-
-    <!-- About -->
-    <section id="about">
-      <div class="container grid grid-2">
-        <div class="card">
-          <h2 class="section-title">What is Kali Kempo?</h2>
-          <p class="lead">It’s a modern training approach that combines the philosophies of Shaolin Kung Fu, Shaolin Kempo, and Pekiti Tirsia Kali. <br><br>Combining chinese and filipino martial arts creates a blend that allows for practical self defense, along with improving health and fitness levels.<br><br>
-            <em>Shaolin Kempo</em> for versatile striking and movement, <em>Shaolin Kung Fu</em> for breathing and meditative techniques, and <em>Pekiti Tirsia Kali</em> for weapon principles that improve empty‑hand skills.</p>
-          <ul>
-            <li>Beginner‑friendly, technique‑driven classes</li>
-            <li>Focus on awareness, de‑escalation, and fitness</li>
-            <li>Train safely with pads, controlled drills, and clear progressions</li>
-          </ul>
-        </div>
-        <div class="card">
-          <h2 class="section-title">Who are classes for?</h2>
-          <p>We currently offer two age groups on <strong>Monday & Friday evenings</strong>:</p>
-          <ul>
-            <li><strong>Kids / Pre‑Teens (8–13):</strong> 6:30–7:30 PM</li>
-            <li><strong>Teens & Adults (14+):</strong> 7:30–8:30 PM</li>
-          </ul>
-          <p class="small">No previous experience needed. Wear comfortable workout clothes and bring water.</p>
-        </div>
-      </div>
-    </section>
-
-
-    <!-- Instructor Bio -->
-    <section id="instructor">
-      <div class="container">
-        <div class="card">
-          <h2 class="section-title">About the Instructor</h2>
-          <p><strong>Instructor William Hollwedel — Founder, Kali Kempo (Raleigh, NC)</strong></p>
-          <p>I began training in martial arts at age three and have spent nearly three decades studying and teaching systems from around the world. My background includes 18 years in Shaolin Kempo, 8 years in Pekiti Tirsia Kali, and focused experience in kickboxing, sambo, and fencing.</p>
-          <p>Through these disciplines, I developed <strong>Kali Kempo</strong> — a modern approach that blends traditional structure and flow with practical, real-world self-defense. My goal is to help students build skill, confidence, and adaptability through disciplined, hands-on training in a safe and supportive environment.</p>
-        </div>
-      </div>
-    </section>
-
-
-    <!-- Schedule & Pricing -->
-    <section id="schedule">
-      <div class="container">
-        <h2 class="section-title">Schedule & Pricing</h2>
-        <div class="grid grid-3" aria-label="Pricing options">
-          <div class="card" role="article">
-            <h3>Drop‑In</h3>
-            <div class="price">$15</div>
-            <p class="small">Per class • Pay as you go</p>
-          </div>
-          <div class="card" role="article">
-            <h3>Monthly</h3>
-            <div class="price">$80</div>
-            <p class="small">Unlimited classes for the month</p>
-          </div>
-          <div class="card" role="article">
-            <h3>When</h3>
-            <p><strong>Monday & Friday</strong> evenings</p>
-            <ul>
-              <li>Kids / Pre‑Teens (8–13): <strong>6:30–7:30 PM</strong></li>
-              <li>Teens & Adults (14+): <strong>7:30–8:30 PM</strong></li>
-            </ul>
-          </div>
-        </div>
-
-        <div class="card" style="margin-top:18px;">
-          <h3 style="margin:0 0 10px;">Class Calendar (Weekly)</h3>
-          <table aria-label="Weekly class calendar">
-            <thead>
-              <tr>
-                <th>Day</th>
-                <th>Kids / Pre‑Teens (8–13)</th>
-                <th>Teens & Adults (14+)</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>Monday</td>
-                <td>6:30–7:30 PM</td>
-                <td>7:30–8:30 PM</td>
-              </tr>
-              <tr>
-                <td>Friday</td>
-                <td>6:30–7:30 PM</td>
-                <td>7:30–8:30 PM</td>
-              </tr>
-            </tbody>
-          </table>
-          <p class="small">* No long‑term contracts. Community‑center holiday closures may affect specific dates.</p>
-        </div>
-      </div>
-    </section>
-
-    <!-- Location -->
-    <section id="location">
-      <div class="container grid grid-2">
-        <div class="card">
-          <h2 class="section-title">Location</h2>
-          <p><strong>Optimist Park Community Center</strong><br><span class="small">Raleigh, North Carolina</span></p>
-          <p>We train inside the community center. Please check in at the front desk when you arrive.</p>
-          <div class="cta">
-            <a class="btn primary" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=Optimist+Park+Community+Center+Raleigh+NC">Get Directions</a>
-            <!-- TODO: replace with your real phone or email -->
-            <a class="btn" href="#contact">Questions? Contact us</a>
-          </div>
-        </div>
-        <div class="card">
-          <iframe class="map" title="Map to Optimist Park Community Center"
-            loading="lazy" allowfullscreen
-            src="https://www.google.com/maps?q=Optimist+Park+Community+Center,+Raleigh,+NC&output=embed"></iframe>
-        </div>
-      </div>
-    </section>
-
-    <!-- What to Expect -->
-    <section id="expect">
-      <div class="container grid grid-3">
-        <div class="card">
-          <h3>Safety First</h3>
-          <p>We emphasize controlled drills, mutual respect, and progressive contact. Equipment is introduced as students are ready.</p>
-        </div>
-        <div class="card">
-          <h3>Skills that Transfer</h3>
-          <p>Footwork, timing, and distance control from Kali improve striking and self‑defense across the board.</p>
-        </div>
-        <div class="card">
-          <h3>Bring</h3>
-          <p>Water, comfortable workout clothes, and a positive attitude. Any training gear needed will be provided in class for beginners.</p>
-        </div>
-      </div>
-    </section>
-
-    <!-- FAQ -->
-    <section id="faq">
-      <div class="container">
-        <h2 class="section-title">FAQ</h2>
-        <div class="grid">
-          <details class="card">
-            <summary><strong>Do I need prior martial arts experience?</strong></summary>
-            <p>Nope! Classes are beginner‑friendly with clear progressions.</p>
-          </details>
-          <details class="card">
-            <summary><strong>What should I wear?</strong></summary>
-            <p>Comfortable athletic clothes. No uniform is needed for the first month, and training is barefoot on a clean floor.</p>
-          </details>
-          <details class="card">
-            <summary><strong>How do payments work?</strong></summary>
-            <p>Pay per class ($15) or monthly ($80). No contracts.</p>
-          </details>
-        </div>
-      </div>
-    </section>
-
-    <!-- Contact -->
-    <section id="contact">
-      <div class="container grid grid-2">
-        <div class="card">
-          <h2 class="section-title">Contact</h2>
-          <p>Have a question or want to try a class? Reach out anytime.</p>
-          <ul>
-            <li>Email: <a href="mailto:kalikemposelfdefense@gmail.com">kalikemposelfdefense@gmail.com</a></li>
-			<li>Phone: (631) 662-3282
-          </ul>
-        </div>
-        <div class="card" aria-live="polite">
-          <h3 style="margin-top:0;">Try Your First Class</h3>
-          <p>Drop‑ins welcome. Just check in at the Optimist Park front desk and let them know you’re here for Kali Kempo.</p>
-          <a class="btn primary" href="#schedule" aria-label="See schedule and pricing again">See Schedule</a>
-        </div>
-      </div>
-    </section>
-  </main>
+  <section id="hero">
+    <h2>Where Tradition Meets Modern Application</h2>
+    <p>Practical self-defense rooted in traditional martial arts discipline.</p>
+    <a class="btn primary" href="schedule.html">See Schedule & Pricing</a>
+  </section>
 
   <footer>
-    <div class="container">
-      <div class="grid grid-2">
-        <div>
-          <strong>Kali Kempo Self Defense</strong>
-          <p class="small">A practical blend of Shaolin Kempo • Shaolin Kung Fu • Pekiti Tirsia Kali</p>
-        </div>
-        <div style="text-align:right;">
-          <p class="small">Classes at Optimist Park Community Center • Mon & Fri evenings</p>
-          <p class="small">Pricing: $15/class or $80/month</p>
-        </div>
+    <p>&copy; 2025 Kali Kempo Martial Arts | All Rights Reserved</p>
   </footer>
-
-  <script>
-    document.getElementById('y').textContent = new Date().getFullYear();
-  </script>
 </body>
 </html>
