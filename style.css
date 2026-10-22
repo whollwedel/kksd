@@ -81,10 +81,13 @@ footer {
 nav .dropdown { position: relative; }
 
 nav .dropdown summary {
+  display: inline;          /* behaves like the other nav links */
   list-style: none;
   cursor: pointer;
   color: #fff;
+  font: inherit;
   font-weight: 600;
+  font-size: inherit;
   padding: 0.3rem 0.6rem;
   border-radius: 4px;
 }
