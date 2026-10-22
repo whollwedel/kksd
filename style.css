@@ -76,3 +76,42 @@ footer {
   padding: 1rem 0;
   margin-top: 3rem;
 }
+
+/* Our Arts dropdown */
+nav .dropdown { position: relative; }
+
+nav .dropdown summary {
+  list-style: none;
+  cursor: pointer;
+  color: #fff;
+  font-weight: 600;
+  padding: 0.3rem 0.6rem;
+  border-radius: 4px;
+}
+nav .dropdown summary::-webkit-details-marker { display: none; }
+nav .dropdown summary::after { content: " \25BE"; }   /* small down arrow */
+
+nav .dropdown summary:hover,
+nav .dropdown details[open] summary { background: #e63946; }
+
+nav .submenu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  z-index: 10;
+  min-width: 14rem;
+  margin: 0.25rem 0 0;
+  padding: 0.4rem;
+  background: #111;
+  border: 1px solid #333;
+  border-radius: 6px;
+  display: block;          /* override the nav's flex row */
+  text-align: left;
+}
+nav .submenu li { display: block; }
+nav .submenu a { display: block; white-space: nowrap; }
+
+/* On narrow screens, expand the menu in the flow instead of floating */
+@media (max-width: 600px) {
+  nav .submenu { position: static; border: 0; padding-left: 0.8rem; }
+}
